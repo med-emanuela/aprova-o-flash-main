@@ -12,6 +12,7 @@ import PurchaseNotification from "@/components/PurchaseNotification";
 
 import criadoraImg from "@/assets/criadora.png";
 import image3 from "@/assets/3.webp";
+import image4 from "@/assets/4.jpg";
 import screenshot1 from "@/assets/screenshot1.png";
 import screenshot2 from "@/assets/screenshot2.png";
 import screenshot3 from "@/assets/screenshot3.png";
@@ -84,7 +85,7 @@ const Index = () => {
           <span className="font-display font-bold text-sm md:text-base inline-flex items-center gap-2 min-w-fit">
             <Stethoscope className="w-4 h-4 text-secondary" /> <span className="hidden sm:inline">Flashcards Medicina</span>
           </span>
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-wrap sm:flex-nowrap justify-center sm:justify-start">
             <CountdownTimer />
           </div>
           <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="ml-auto">
@@ -101,7 +102,7 @@ const Index = () => {
       <section
         className="relative min-h-screen flex items-center bg-black/80"
         style={{
-          backgroundImage: `url(${criadoraImg})`,
+          backgroundImage: `url(${image4})`,
           backgroundSize: window.innerWidth < 768 ? "cover" : "cover",
           backgroundPosition: window.innerWidth < 768 ? "center 30%" : "center 12%",
           backgroundRepeat: "no-repeat",
