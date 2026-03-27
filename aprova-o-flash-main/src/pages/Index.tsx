@@ -99,7 +99,7 @@ const Index = () => {
         className="relative min-h-screen flex items-center bg-black/80"
         style={{
           backgroundImage: `url(${criadoraImg})`,
-          backgroundSize: "cover",
+          backgroundSize: window.innerWidth < 768 ? "contain" : "cover",
           backgroundPosition: "center 12%",
           backgroundRepeat: "no-repeat",
         }}
