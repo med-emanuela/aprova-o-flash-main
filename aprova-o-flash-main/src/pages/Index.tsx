@@ -193,7 +193,7 @@ const Index = () => {
                 </p>
               </div>
               <div className="mt-8">
-                <CTAButton text="QUERO MINHA APROVAÇÃO — R$ 37,90" />
+                <CTAButton text="QUERO MINHA APROVAÇÃO" />
               </div>
             </div>
           </Section>
@@ -221,7 +221,7 @@ const Index = () => {
                   Cada card foi cuidadosamente elaborado com dicas exclusivas dos meus professores,
                   organizado por matéria e pronto para uso imediato. Agora estou compartilhando tudo isso com você.
                 </p>
-                <CTAButton text="QUERO MEUS FLASHCARDS — R$ 37,90" />
+                <CTAButton text="QUERO MEUS FLASHCARDS" />
               </div>
             </Section>
             <Section>
@@ -405,19 +405,7 @@ const Index = () => {
                   ))}
                 </div>
 
-                <div className="text-center mb-6 sm:mb-8 py-5 sm:py-7 border-y border-border/60">
-                  <p className="text-muted-foreground line-through text-base sm:text-lg">De R$ 197,00</p>
-                  <div className="mt-3 flex flex-col items-center gap-1">
-                    <span className="text-muted-foreground text-base sm:text-xl">por apenas</span>
-                    <div className="inline-flex items-end justify-center leading-none">
-                      <span className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-primary tracking-tight">R$ 37</span>
-                      <span className="text-primary text-xl sm:text-2xl md:text-3xl font-semibold mb-1">,90</span>
-                    </div>
-                  </div>
-                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">ou 4x de R$ 10,22 sem juros</p>
-                </div>
-
-                <CTAButton text="QUERO MEUS FLASHCARDS — R$ 37,90" className="w-full max-w-xl mx-auto justify-center" />
+                <CTAButton text="QUERO MEUS FLASHCARDS" className="w-full max-w-xl mx-auto justify-center" />
 
                 <div className="flex flex-wrap justify-center gap-x-3 sm:gap-x-5 gap-y-2 mt-6 text-xs text-muted-foreground">
                   <div className="flex items-center gap-1">
@@ -476,7 +464,7 @@ const Index = () => {
                 Não deixe para depois o que pode mudar o seu futuro hoje.
               </p>
 
-              <CTAButton text="QUERO COMEÇAR AGORA — R$ 37,90" />
+              <CTAButton text="QUERO COMEÇAR AGORA" />
 
               <p className="text-xs sm:text-sm text-muted-foreground mt-6 flex items-center justify-center gap-2">
                 <Gift className="w-4 h-4 text-secondary" />
