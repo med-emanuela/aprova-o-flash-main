@@ -417,7 +417,7 @@ const Index = () => {
                   <p className="text-xs sm:text-sm text-muted-foreground mt-3">ou 4x de R$ 10,22 sem juros</p>
                 </div>
 
-                <CTAButton text="QUERO MEUS FLASHCARDS — R$ 37,90" className="w-full max-w-xl mx-auto justify-center" />
+                <CTAButton text="QUERO MEUS FLASHCARDS" className="w-full max-w-xl mx-auto justify-center" />
 
                 <div className="flex flex-wrap justify-center gap-x-3 sm:gap-x-5 gap-y-2 mt-6 text-xs text-muted-foreground">
                   <div className="flex items-center gap-1">
