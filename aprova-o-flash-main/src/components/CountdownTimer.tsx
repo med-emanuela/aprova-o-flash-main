@@ -20,19 +20,19 @@ const CountdownTimer = () => {
   const pad = (n: number) => n.toString().padStart(2, "0");
 
   return (
-    <div className="flex items-center gap-2 justify-center">
-      <span className="text-xs text-muted-foreground uppercase tracking-wider">Oferta expira em:</span>
-      <div className="flex gap-1">
+    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 justify-center w-full sm:w-auto px-2">
+      <span className="text-xs sm:text-sm text-muted-foreground uppercase tracking-wider whitespace-nowrap">Oferta expira em:</span>
+      <div className="flex gap-1 sm:gap-1.5 flex-wrap sm:flex-nowrap justify-center">
         {[
           { val: time.hours, label: "h" },
           { val: time.minutes, label: "m" },
           { val: time.seconds, label: "s" },
         ].map((t, i) => (
           <div key={i} className="flex items-center gap-0.5">
-            <span className="bg-primary/20 text-primary font-bold text-lg px-2 py-1 rounded font-display">
+            <span className="bg-primary/20 text-primary font-bold text-sm sm:text-lg px-1.5 sm:px-2 py-1 rounded font-display whitespace-nowrap">
               {pad(t.val)}
             </span>
-            <span className="text-muted-foreground text-xs">{t.label}</span>
+            <span className="text-muted-foreground text-xs sm:text-xs whitespace-nowrap">{t.label}</span>
           </div>
         ))}
       </div>
