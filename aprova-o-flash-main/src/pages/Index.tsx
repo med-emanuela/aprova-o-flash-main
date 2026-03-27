@@ -99,7 +99,7 @@ const Index = () => {
       <section
         className="relative min-h-screen flex items-center bg-black/80"
         style={{
-          backgroundImage: `url(${image3})`,
+          backgroundImage: `url(${criadoraImg})`,
           backgroundSize: window.innerWidth < 768 ? "cover" : "cover",
           backgroundPosition: window.innerWidth < 768 ? "center 30%" : "center 12%",
           backgroundRepeat: "no-repeat",
