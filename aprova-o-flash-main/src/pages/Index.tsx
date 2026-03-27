@@ -80,18 +80,20 @@ const Index = () => {
 
       {/* ===== STICKY TOP BAR ===== */}
       <div className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-secondary/20 py-3">
-        <div className="container mx-auto px-4 flex items-center justify-between">
-          <span className="font-display font-bold text-sm md:text-base inline-flex items-center gap-2">
-            <Stethoscope className="w-4 h-4 text-secondary" /> Flashcards Medicina
+        <div className="container mx-auto px-4 flex items-center justify-between gap-2 sm:gap-3">
+          <span className="font-display font-bold text-sm md:text-base inline-flex items-center gap-2 min-w-fit">
+            <Stethoscope className="w-4 h-4 text-secondary" /> <span className="hidden sm:inline">Flashcards Medicina</span>
           </span>
-          <div className="flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-3">
             <CountdownTimer />
-            <a href={CTA_URL} target="_blank" rel="noopener noreferrer">
-              <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xs md:text-sm px-4 py-2 rounded-lg glow-green animate-pulse-glow">
-                COMPRAR AGORA <ArrowRight className="ml-1 w-3.5 h-3.5" />
-              </Button>
-            </a>
           </div>
+          <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="ml-auto">
+            <Button size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xs sm:text-sm px-3 sm:px-4 py-2 sm:py-2 rounded-lg glow-green animate-pulse-glow whitespace-nowrap">
+              <span className="hidden sm:inline">COMPRAR AGORA</span>
+              <span className="sm:hidden">COMPRAR</span>
+              <ArrowRight className="ml-1 w-3 h-3 sm:w-3.5 sm:h-3.5" />
+            </Button>
+          </a>
         </div>
       </div>
 
