@@ -23,6 +23,7 @@ import screenshot9 from "@/assets/screenshot9.png";
 import screenshot10 from "@/assets/screenshot10.png";
 import flashcard2 from "@/assets/flashcard-2.png";
 import flashcard3 from "@/assets/flashcard-3.png";
+import image3 from "@/assets/3.webp";
 import whatsappProof from "@/assets/whatsapp-proof.png";
 import whatsappImageFinal from "@/assets/whatsapp-image-final.jpeg";
 import avaliacao1 from "@/assets/1.jpg";
@@ -285,7 +286,7 @@ const Index = () => {
           </Section>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
-            {[screenshot1, screenshot2, screenshot3, screenshot4, screenshot5, screenshot6, screenshot7, screenshot8, screenshot9, screenshot10, flashcard2, flashcard3].map((img, i) => (
+            {[screenshot1, screenshot2, screenshot3, screenshot4, screenshot5, screenshot6, screenshot7, screenshot8, screenshot9, screenshot10, flashcard2, flashcard3, image3].map((img, i) => (
               <Section key={i}>
                 <div 
                   className="rounded-xl overflow-hidden border border-border hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/5 hover:scale-[1.02] cursor-pointer group relative"
