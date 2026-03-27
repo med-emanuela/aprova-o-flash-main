@@ -99,26 +99,26 @@ const Index = () => {
         className="relative min-h-screen flex items-center bg-black/80"
         style={{
           backgroundImage: `url(${criadoraImg})`,
-          backgroundSize: window.innerWidth < 768 ? "contain" : "cover",
-          backgroundPosition: "center 12%",
+          backgroundSize: window.innerWidth < 768 ? "cover" : "cover",
+          backgroundPosition: window.innerWidth < 768 ? "center 30%" : "center 12%",
           backgroundRepeat: "no-repeat",
         }}
       >
         <div className="absolute inset-0 bg-[linear-gradient(180deg,hsl(212_38%_8%/.82)_0%,hsl(212_38%_8%/.68)_40%,hsl(212_38%_8%/.88)_100%)]" />
-        <div className="relative container mx-auto px-4 py-20 md:py-32 text-center">
-          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 max-w-5xl mx-auto">
+        <div className="relative container mx-auto px-4 py-16 sm:py-20 md:py-32 text-center">
+          <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 max-w-5xl mx-auto">
             +3000 Flashcards Prontos Para Você Conquistar Sua{" "}
             <span className="text-gradient">Aprovação em Medicina</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
             Eu fui aprovada em 5 faculdades de medicina usando esse método. 
             Agora você pode ter acesso ao mesmo material que mudou minha vida.
           </p>
 
           <CTAButton text="QUERO MEUS FLASHCARDS" />
 
-          <div className="flex flex-wrap justify-center gap-6 mt-10 text-sm text-muted-foreground">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-6 mt-10 text-xs sm:text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <Shield className="w-4 h-4 text-primary" />
               <span>Garantia de 7 dias</span>
@@ -128,7 +128,7 @@ const Index = () => {
       </section>
 
       {/* ===== PROBLEMA ===== */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 sm:py-16 md:py-28">
         <div className="container mx-auto px-4">
           <Section>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-4">
@@ -139,7 +139,7 @@ const Index = () => {
             </p>
           </Section>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
             {[
               { icon: XCircle, title: "Esquece o que estudou", desc: "Eu estudava o dia inteiro e na hora da prova não lembrava de nada. Parecia que meu cérebro apagava tudo." },
               { icon: Clock, title: "Horas desperdiçadas", desc: "Passava 10, 12 horas estudando e sentia que não avançava. O tempo ia embora sem resultado real." },
@@ -148,13 +148,13 @@ const Index = () => {
             ].map((item, i) => (
               <Section key={i}>
                 <div className="bg-card border border-border rounded-xl p-6 hover:border-destructive/50 transition-colors">
-                  <div className="flex items-start gap-4">
-                    <div className="p-2 bg-destructive/10 rounded-lg shrink-0">
-                      <item.icon className="w-6 h-6 text-destructive" />
-                    </div>
-                    <div>
-                      <h3 className="font-display font-bold text-lg mb-2">{item.title}</h3>
-                      <p className="text-muted-foreground text-sm">{item.desc}</p>
+                    <div className="flex items-start gap-3 sm:gap-4">
+                      <div className="p-2 bg-destructive/10 rounded-lg shrink-0">
+                        <item.icon className="w-5 sm:w-6 h-5 sm:h-6 text-destructive" />
+                      </div>
+                      <div>
+                        <h3 className="font-display font-bold text-base sm:text-lg mb-2">{item.title}</h3>
+                        <p className="text-muted-foreground text-xs sm:text-sm">{item.desc}</p>
                     </div>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ const Index = () => {
       </section>
 
       {/* ===== AGITAÇÃO ===== */}
-      <section className="py-16 md:py-24 bg-card/50">
+      <section className="py-12 sm:py-16 md:py-24 bg-card/50">
         <div className="container mx-auto px-4 max-w-3xl">
           <Section>
             <div className="text-center">
@@ -173,7 +173,7 @@ const Index = () => {
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
                 Eu também já me senti assim. Mas encontrei o caminho.
               </h2>
-              <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
+              <div className="space-y-4 text-muted-foreground text-base sm:text-lg leading-relaxed">
                 <p>
                   Eu sei o que é estudar por horas e sentir que nada fica na memória.
                   Mas quando eu descobri os <strong className="text-foreground">flashcards e a repetição espaçada</strong>,
@@ -197,19 +197,19 @@ const Index = () => {
       </section>
 
       {/* ===== SOLUÇÃO ===== */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 sm:py-16 md:py-28">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center max-w-5xl mx-auto">
             <Section>
               <div>
                 <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-1.5 mb-6">
                   <Lightbulb className="w-4 h-4 text-primary" />
                   <span className="text-sm text-primary font-medium">A solução que me aprovou</span>
                 </div>
-                <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
                   Conheça os <span className="text-gradient">Flashcards</span> que me deram múltiplas aprovações
                 </h2>
-                <p className="text-muted-foreground text-lg mb-6">
+                <p className="text-muted-foreground text-base sm:text-lg mb-6">
                   Eu criei +3000 flashcards durante minha preparação e fui aprovada em <strong className="text-foreground">5 faculdades de medicina</strong>: 
                   Einstein, UFRJ, Santa Casa, Sírio-Libanês e FMJ.
                 </p>
@@ -238,7 +238,7 @@ const Index = () => {
       </section>
 
       {/* ===== BENEFÍCIOS ===== */}
-      <section className="py-20 md:py-28 bg-card/50">
+      <section className="py-12 sm:py-16 md:py-28 bg-card/50">
         <div className="container mx-auto px-4">
           <Section>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-4">
@@ -249,7 +249,7 @@ const Index = () => {
             </p>
           </Section>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
             {[
               { icon: BookOpen, title: "+3000 Flashcards", desc: "Conteúdo completo cobrindo todas as matérias dos principais vestibulares de medicina." },
               { icon: Brain, title: "Memorização Ativa", desc: "Baseado em técnicas comprovadas de repetição espaçada que fixam o conteúdo na memória de longo prazo." },
@@ -259,12 +259,12 @@ const Index = () => {
               { icon: TrendingUp, title: "Produtividade Máxima", desc: "Estude em qualquer lugar, a qualquer hora. Otimize cada minuto do seu dia." },
             ].map((item, i) => (
               <Section key={i}>
-                <div className="bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/5 group">
+                <div className="bg-card border border-border rounded-xl p-4 sm:p-6 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/5 group">
                   <div className="p-3 bg-primary/10 rounded-xl w-fit mb-4 group-hover:bg-primary/20 transition-colors">
-                    <item.icon className="w-6 h-6 text-primary" />
+                    <item.icon className="w-5 sm:w-6 h-5 sm:h-6 text-primary" />
                   </div>
-                  <h3 className="font-display font-bold text-lg mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.desc}</p>
+                  <h3 className="font-display font-bold text-base sm:text-lg mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm">{item.desc}</p>
                 </div>
               </Section>
             ))}
@@ -273,7 +273,7 @@ const Index = () => {
       </section>
 
       {/* ===== AMOSTRA DOS FLASHCARDS ===== */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 sm:py-16 md:py-28">
         <div className="container mx-auto px-4">
           <Section>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-4">
@@ -284,7 +284,7 @@ const Index = () => {
             </p>
           </Section>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
             {[screenshot1, screenshot2, screenshot3, screenshot4, screenshot5, screenshot6, screenshot7, screenshot8, screenshot9, screenshot10, flashcard2, flashcard3].map((img, i) => (
               <Section key={i}>
                 <div 
@@ -314,15 +314,15 @@ const Index = () => {
       </section>
 
       {/* ===== COMO FUNCIONA ===== */}
-      <section className="py-20 md:py-28 bg-card/50">
+      <section className="py-12 sm:py-16 md:py-28 bg-card/50">
         <div className="container mx-auto px-4">
           <Section>
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-12">
+            <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-8 sm:mb-12">
               Como funciona?
             </h2>
           </Section>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
             {[
               { step: "01", icon: ShoppingCart, title: "Compre", desc: "Faça sua compra com total segurança. O acesso é imediato após a confirmação do pagamento." },
               { step: "02", icon: Lock, title: "Acesse", desc: "Receba o acesso completo aos +3000 flashcards organizados por matéria. Tudo pronto para começar." },
@@ -330,12 +330,12 @@ const Index = () => {
             ].map((item, i) => (
               <Section key={i}>
                 <div className="text-center">
-                  <div className="text-5xl font-display font-bold text-primary/20 mb-4">{item.step}</div>
-                  <div className="p-4 bg-primary/10 rounded-2xl w-fit mx-auto mb-4">
-                    <item.icon className="w-8 h-8 text-primary" />
+                  <div className="text-4xl sm:text-5xl font-display font-bold text-primary/20 mb-4">{item.step}</div>
+                  <div className="p-3 sm:p-4 bg-primary/10 rounded-2xl w-fit mx-auto mb-4">
+                    <item.icon className="w-7 sm:w-8 h-7 sm:h-8 text-primary" />
                   </div>
-                  <h3 className="font-display font-bold text-xl mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm">{item.desc}</p>
+                  <h3 className="font-display font-bold text-lg sm:text-xl mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground text-xs sm:text-sm">{item.desc}</p>
                 </div>
               </Section>
             ))}
@@ -344,7 +344,7 @@ const Index = () => {
       </section>
 
       {/* ===== AVALIAÇÕES ===== */}
-      <section className="py-20 md:py-28">
+      <section className="py-12 sm:py-16 md:py-28">
         <div className="container mx-auto px-4">
           <Section>
             <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-4">
@@ -357,7 +357,7 @@ const Index = () => {
 
           {/* WhatsApp proof */}
           <Section>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto items-start">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto items-start">
               {[whatsappProof, avaliacao1, avaliacao2].map((image, idx) => (
                 <div key={idx} className="rounded-2xl overflow-hidden border border-primary/20 self-start">
                   <img src={image} alt={`Depoimento ${idx + 1}`} className="w-full h-auto block" loading="lazy" />
@@ -369,22 +369,22 @@ const Index = () => {
       </section>
 
       {/* ===== OFERTA ===== */}
-      <section id="oferta" className="py-20 md:py-28 bg-card/50">
+      <section id="oferta" className="py-12 sm:py-16 md:py-28 bg-card/50">
         <div className="container mx-auto px-4">
           <Section>
             <div className="max-w-2xl mx-auto">
               <CountdownTimer />
 
-              <h2 className="font-display text-3xl md:text-5xl font-bold text-center mt-8 mb-4">
+              <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold text-center mt-6 sm:mt-8 mb-4">
                 Garanta seus flashcards <span className="text-gradient">agora</span>
               </h2>
 
-              <div className="bg-card border-2 border-primary/50 rounded-2xl p-6 md:p-8 mt-8 glow-green">
-                <h3 className="font-display text-2xl font-bold text-center mb-8">
+              <div className="bg-card border-2 border-primary/50 rounded-2xl p-4 sm:p-6 md:p-8 mt-6 sm:mt-8 glow-green">
+                <h3 className="font-display text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8">
                   Tudo o que você recebe:
                 </h3>
 
-                <div className="max-w-xl mx-auto space-y-3.5 mb-10">
+                <div className="max-w-xl mx-auto space-y-2.5 sm:space-y-3.5 mb-8 sm:mb-10">
                   {[
                     "+3000 flashcards prontos e organizados",
                     "Conteúdo completo para vestibulares de medicina",
@@ -394,28 +394,28 @@ const Index = () => {
                     "Acesso imediato após a compra",
                     "Atualizações futuras gratuitas",
                   ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-3 leading-relaxed">
-                      <CheckCircle2 className="w-5 h-5 mt-0.5 text-primary shrink-0" />
-                      <span className="text-foreground text-base">{item}</span>
+                    <div key={i} className="flex items-start gap-2 sm:gap-3 leading-relaxed">
+                      <CheckCircle2 className="w-4 sm:w-5 h-4 sm:h-5 mt-0.5 text-primary shrink-0" />
+                      <span className="text-foreground text-sm sm:text-base">{item}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className="text-center mb-8 py-7 border-y border-border/60">
-                  <p className="text-muted-foreground line-through text-lg">De R$ 197,00</p>
+                <div className="text-center mb-6 sm:mb-8 py-5 sm:py-7 border-y border-border/60">
+                  <p className="text-muted-foreground line-through text-base sm:text-lg">De R$ 197,00</p>
                   <div className="mt-3 flex flex-col items-center gap-1">
-                    <span className="text-muted-foreground text-xl">por apenas</span>
+                    <span className="text-muted-foreground text-base sm:text-xl">por apenas</span>
                     <div className="inline-flex items-end justify-center leading-none">
-                      <span className="font-display text-5xl md:text-6xl font-bold text-primary tracking-tight">R$ 37</span>
-                      <span className="text-primary text-2xl md:text-3xl font-semibold mb-1">,90</span>
+                      <span className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-primary tracking-tight">R$ 37</span>
+                      <span className="text-primary text-xl sm:text-2xl md:text-3xl font-semibold mb-1">,90</span>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-3">ou 4x de R$ 10,22 sem juros</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">ou 4x de R$ 10,22 sem juros</p>
                 </div>
 
                 <CTAButton text="QUERO MEUS FLASHCARDS — R$ 37,90" className="w-full max-w-xl mx-auto justify-center" />
 
-                <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 mt-6 text-xs text-muted-foreground">
+                <div className="flex flex-wrap justify-center gap-x-3 sm:gap-x-5 gap-y-2 mt-6 text-xs text-muted-foreground">
                   <div className="flex items-center gap-1">
                     <CreditCard className="w-3.5 h-3.5" /> Pix, cartão ou boleto
                   </div>
@@ -433,17 +433,17 @@ const Index = () => {
       </section>
 
       {/* ===== GARANTIA ===== */}
-      <section className="py-16 md:py-24">
+      <section className="py-12 sm:py-16 md:py-24">
         <div className="container mx-auto px-4">
           <Section>
             <div className="max-w-2xl mx-auto text-center">
               <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-10 h-10 text-primary" />
               </div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
                 Garantia Incondicional de 7 Dias
               </h2>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-base sm:text-lg">
                 Se por qualquer motivo você sentir que os flashcards não são para você,
                 basta enviar um e-mail em até 7 dias após a compra e devolvemos <strong className="text-foreground">100% do seu dinheiro</strong>.
                 Sem perguntas, sem burocracia. O risco é todo meu.
@@ -454,27 +454,27 @@ const Index = () => {
       </section>
 
       {/* ===== SEÇÃO FINAL ===== */}
-      <section className="py-20 md:py-28 bg-card/50">
+      <section className="py-12 sm:py-16 md:py-28 bg-card/50">
         <div className="container mx-auto px-4">
           <Section>
             <div className="max-w-3xl mx-auto text-center">
-              <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary/50 mx-auto mb-8 glow-green">
+              <div className="w-24 sm:w-32 h-24 sm:h-32 rounded-full overflow-hidden border-4 border-primary/50 mx-auto mb-6 sm:mb-8 glow-green">
                 <img src={whatsappImageFinal} alt="Depoimento WhatsApp" className="w-full h-full object-cover" />
               </div>
 
-              <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
+              <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-6">
                 Se eu consegui <span className="text-gradient">5 aprovações em medicina</span>,
                 <br />você também pode
               </h2>
 
-              <p className="text-muted-foreground text-lg mb-10 max-w-xl mx-auto">
+              <p className="text-muted-foreground text-base sm:text-lg mb-8 sm:mb-10 max-w-xl mx-auto">
                 O mesmo material que fez a diferença na minha jornada está disponível para você agora.
                 Não deixe para depois o que pode mudar o seu futuro hoje.
               </p>
 
               <CTAButton text="QUERO COMEÇAR AGORA — R$ 37,90" />
 
-              <p className="text-sm text-muted-foreground mt-6 flex items-center justify-center gap-2">
+              <p className="text-xs sm:text-sm text-muted-foreground mt-6 flex items-center justify-center gap-2">
                 <Gift className="w-4 h-4 text-secondary" />
                 Vagas limitadas com esse preço especial
               </p>
@@ -484,9 +484,9 @@ const Index = () => {
       </section>
 
       {/* ===== FOOTER ===== */}
-      <footer className="py-8 border-t border-border">
+      <footer className="py-6 sm:py-8 border-t border-border">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-xs sm:text-sm text-muted-foreground">
             © {new Date().getFullYear()} · Flashcards Medicina · Todos os direitos reservados
           </p>
           <p className="text-xs text-muted-foreground mt-2">
