@@ -438,27 +438,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ===== GARANTIA ===== */}
-      <section className="py-12 sm:py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <Section>
-            <div className="max-w-2xl mx-auto text-center">
-              <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Shield className="w-10 h-10 text-primary" />
-              </div>
-              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
-                Garantia Incondicional de 7 Dias
-              </h2>
-              <p className="text-muted-foreground text-base sm:text-lg">
-                Se por qualquer motivo você sentir que os flashcards não são para você,
-                basta enviar um e-mail em até 7 dias após a compra e devolvemos <strong className="text-foreground">100% do seu dinheiro</strong>.
-                Sem perguntas, sem burocracia. O risco é todo meu.
-              </p>
-            </div>
-          </Section>
-        </div>
-      </section>
-
       {/* ===== SEÇÃO FINAL ===== */}
       <section className="py-12 sm:py-16 md:py-28 bg-card/50">
         <div className="container mx-auto px-4">
