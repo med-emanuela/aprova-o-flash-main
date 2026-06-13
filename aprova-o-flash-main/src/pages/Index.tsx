@@ -147,10 +147,10 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto">
             {[
-              { icon: XCircle, title: "Esquece o que estudou", desc: "Eu estudava o dia inteiro e na hora da prova não lembrava de nada. Parecia que meu cérebro apagava tudo." },
+              { icon: XCircle, title: "Esqueço o que estudei", desc: "Eu estudava o dia inteiro e na hora da prova não lembrava de nada. Parecia que meu cérebro apagava tudo." },
               { icon: Clock, title: "Horas desperdiçadas", desc: "Passava 10, 12 horas estudando e sentia que não avançava. O tempo ia embora sem resultado real." },
               { icon: AlertTriangle, title: "Ansiedade paralisante", desc: "A prova chegando e aquela sensação horrível de não estar preparada. A ansiedade me travava completamente." },
-              { icon: Target, title: "Sem método de revisão", desc: "Eu estudava uma vez e torcia pra lembrar. Não tinha nenhum sistema organizado de revisão." },
+              { icon: Target, title: "Sem método de revisão", desc: "Eu estudava uma vez e torcia para lembrar. Não tinha nenhum sistema organizado de revisão." },
             ].map((item, i) => (
               <Section key={i}>
                 <div className="bg-card border border-border rounded-xl p-6 hover:border-destructive/50 transition-colors">
@@ -183,7 +183,7 @@ const Index = () => {
                 <p>
                   Eu sei o que é estudar por horas e sentir que nada fica na memória.
                   Mas quando eu descobri os <strong className="text-foreground">flashcards e a repetição espaçada</strong>,
-                  tudo mudou. Minha memorização disparou e eu comecei a <strong className="text-foreground">acertar questões que antes parecia impossível</strong>.
+                  tudo mudou. Minha memorização disparou e eu comecei a <strong className="text-foreground">acertar questões que antes pareciam impossível</strong>.
                 </p>
                 <p>
                   Com o método certo, <strong className="text-foreground">qualquer pessoa pode conquistar a aprovação em medicina</strong>.
@@ -433,6 +433,169 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </Section>
+        </div>
+      </section>
+
+      {/* ===== PLANOS ===== */}
+      <section className="py-12 sm:py-16 md:py-28">
+        <div className="container mx-auto px-4">
+          <Section>
+            <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-4">
+              Escolha o plano <span className="text-gradient">perfeito para você</span>
+            </h2>
+            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
+              Temos opções para todo nível de preparo. Escolha a que mais se adequa ao seu objetivo.
+            </p>
+          </Section>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+            {/* PLANO START */}
+            <Section>
+              <div className="bg-card border border-border rounded-2xl p-6 sm:p-8 h-full flex flex-col hover:border-primary/50 transition-colors hover:shadow-lg hover:shadow-primary/5 relative">
+                <div className="absolute -top-3 left-4 bg-card px-3 py-1 rounded-full">
+                  <span className="text-2xl">🥉</span>
+                </div>
+                <div className="mb-6">
+                  <h3 className="font-display text-2xl font-bold mb-2">Medicina Start</h3>
+                  <div className="flex items-baseline gap-1">
+                    <span className="font-display text-4xl font-bold text-primary">R$ 37</span>
+                    <span className="text-primary font-semibold">,90</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-1">ou 4x de R$ 10,22</p>
+                </div>
+                <div className="space-y-2.5 mb-8 flex-grow">
+                  {[
+                    "+1.000 flashcards essenciais prontos",
+                    "Conteúdos mais cobrados em vestibulares",
+                    "Organização por matéria e tema",
+                    "Método de repetição espaçada",
+                    "Tutorial completo de instalação",
+                    "Sistema de revisão ativa",
+                    "Ideal para iniciantes"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                      <span className="text-foreground text-xs sm:text-sm">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="block w-full">
+                  <Button className="w-full bg-border hover:bg-border/80 text-foreground font-bold py-3 rounded-lg">
+                    Escolher Plano
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </a>
+              </div>
+            </Section>
+
+            {/* PLANO PERFORMANCE - DESTAQUE */}
+            <Section>
+              <div className="relative">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+                  <span className="bg-primary text-primary-foreground text-xs font-bold px-4 py-1.5 rounded-full flex items-center gap-1">
+                    ⭐ MAIS ESCOLHIDO
+                  </span>
+                </div>
+                <div className="bg-gradient-to-br from-primary/10 to-card border-2 border-primary rounded-2xl p-6 sm:p-8 h-full flex flex-col shadow-lg shadow-primary/10 hover:shadow-xl hover:shadow-primary/20 transition-all relative">
+                  <div className="absolute -top-3 left-4 bg-card px-3 py-1 rounded-full">
+                    <span className="text-2xl">🥈</span>
+                  </div>
+                  <div className="mb-6 pt-4">
+                    <h3 className="font-display text-2xl font-bold mb-2">Medicina Performance</h3>
+                    <div className="flex items-baseline gap-1">
+                      <span className="font-display text-4xl font-bold text-primary">R$ 67</span>
+                      <span className="text-primary font-semibold">,90</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-1">ou 4x de R$ 17,47</p>
+                  </div>
+                  <div className="space-y-2.5 mb-8 flex-grow">
+                    {[
+                      "Tudo do Medicina Start",
+                      "+2.000 flashcards estratégicos",
+                      "Conteúdo aprofundado para vestibulares",
+                      "Organização inteligente avançada",
+                      "Planner de Estudos completo",
+                      "Cronograma estratégico",
+                      "Planilha de acompanhamento",
+                      "Maior cobertura de conteúdos"
+                    ].map((item, i) => (
+                      <div key={i} className="flex items-start gap-2">
+                        <CheckCircle2 className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                        <span className="text-foreground text-xs sm:text-sm">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="block w-full">
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 rounded-lg glow-green">
+                      Escolher Plano
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  </a>
+                </div>
+              </div>
+            </Section>
+
+            {/* PLANO APROVAÇÃO */}
+            <Section>
+              <div className="bg-card border border-border rounded-2xl p-6 sm:p-8 h-full flex flex-col hover:border-primary/50 transition-colors hover:shadow-lg hover:shadow-primary/5 relative">
+                <div className="absolute -top-3 left-4 bg-card px-3 py-1 rounded-full">
+                  <span className="text-2xl">🥇</span>
+                </div>
+                <div className="mb-6">
+                  <h3 className="font-display text-2xl font-bold mb-2">Medicina Aprovação</h3>
+                  <p className="text-xs text-secondary font-semibold mb-2">🔥 PREPARAÇÃO COMPLETA</p>
+                  <div className="flex items-baseline gap-1">
+                    <span className="font-display text-4xl font-bold text-primary">R$ 97</span>
+                    <span className="text-primary font-semibold">,90</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-1">ou 4x de R$ 25,16</p>
+                </div>
+                <div className="space-y-2.5 mb-8 flex-grow">
+                  {[
+                    "Tudo do Medicina Performance",
+                    "+3.000 flashcards prontos",
+                    "Biblioteca completa de revisão",
+                    "Conteúdo abrangente e aprofundado",
+                    "Planner de alta performance",
+                    "Rotina diária pronta para estudar",
+                    "Calendário de revisões",
+                    "Dicas exclusivas de professores",
+                    "Estrutura completa para máxima performance"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <CheckCircle2 className="w-4 h-4 mt-0.5 text-primary shrink-0" />
+                      <span className="text-foreground text-xs sm:text-sm">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="block w-full">
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 rounded-lg glow-green animate-pulse-glow">
+                    Escolher Plano
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </a>
+              </div>
+            </Section>
+          </div>
+
+          <Section>
+            <div className="text-center mt-10 sm:mt-12">
+              <p className="text-muted-foreground text-xs sm:text-sm flex items-center justify-center gap-3 flex-wrap">
+                <span className="flex items-center gap-1">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Acesso imediato após a compra
+                </span>
+                <span className="flex items-center gap-1">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Atualizações futuras gratuitas
+                </span>
+                <span className="flex items-center gap-1">
+                  <CheckCircle2 className="w-4 h-4 text-primary" />
+                  Garantia de 7 dias
+                </span>
+              </p>
             </div>
           </Section>
         </div>
