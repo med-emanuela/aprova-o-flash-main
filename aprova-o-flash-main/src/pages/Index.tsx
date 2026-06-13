@@ -374,80 +374,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ===== OFERTA ===== */}
+      {/* ===== OFERTA / PLANOS ===== */}
       <section id="oferta" className="py-12 sm:py-16 md:py-28 bg-card/50">
         <div className="container mx-auto px-4">
           <Section>
-            <div className="max-w-2xl mx-auto">
+            <div className="max-w-2xl mx-auto mb-8 sm:mb-12">
               <CountdownTimer />
 
-              <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold text-center mt-6 sm:mt-8 mb-4">
+              <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold text-center mt-6 sm:mt-8 mb-2">
                 Garanta seus flashcards <span className="text-gradient">agora</span>
               </h2>
-
-              <div className="bg-card border-2 border-primary/50 rounded-2xl p-4 sm:p-6 md:p-8 mt-6 sm:mt-8 glow-green">
-                <h3 className="font-display text-xl sm:text-2xl font-bold text-center mb-6 sm:mb-8">
-                  Tudo o que você recebe:
-                </h3>
-
-                <div className="max-w-xl mx-auto space-y-2.5 sm:space-y-3.5 mb-8 sm:mb-10">
-                  {[
-                    "+3000 flashcards prontos e organizados",
-                    "Conteúdo completo para vestibulares de medicina",
-                    "Dicas exclusivas de professores",
-                    "Organização por matéria e tema",
-                    "Método de repetição espaçada incluso",
-                    "Acesso imediato após a compra",
-                    "Atualizações futuras gratuitas",
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-2 sm:gap-3 leading-relaxed">
-                      <CheckCircle2 className="w-4 sm:w-5 h-4 sm:h-5 mt-0.5 text-primary shrink-0" />
-                      <span className="text-foreground text-sm sm:text-base">{item}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="text-center mb-6 sm:mb-8 py-5 sm:py-7 border-y border-border/60">
-                  <p className="text-muted-foreground line-through text-base sm:text-lg">De R$ 197,00</p>
-                  <div className="mt-3 flex flex-col items-center gap-1">
-                    <span className="text-muted-foreground text-base sm:text-xl">por apenas</span>
-                    <div className="inline-flex items-end justify-center leading-none">
-                      <span className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-primary tracking-tight">R$ 37</span>
-                      <span className="text-primary text-xl sm:text-2xl md:text-3xl font-semibold mb-1">,90</span>
-                    </div>
-                  </div>
-                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">ou 4x de R$ 10,22 sem juros</p>
-                </div>
-
-                <CTAButton text="QUERO MEUS FLASHCARDS" className="w-full max-w-xl mx-auto justify-center" />
-
-                <div className="flex flex-wrap justify-center gap-x-3 sm:gap-x-5 gap-y-2 mt-6 text-xs text-muted-foreground">
-                  <div className="flex items-center gap-1">
-                    <CreditCard className="w-3.5 h-3.5" /> Pix, cartão ou boleto
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Lock className="w-3.5 h-3.5" /> Compra 100% segura
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Shield className="w-3.5 h-3.5" /> Garantia de 7 dias
-                  </div>
-                </div>
-              </div>
             </div>
-          </Section>
-        </div>
-      </section>
-
-      {/* ===== PLANOS ===== */}
-      <section className="py-12 sm:py-16 md:py-28">
-        <div className="container mx-auto px-4">
-          <Section>
-            <h2 className="font-display text-3xl md:text-5xl font-bold text-center mb-4">
-              Escolha o plano <span className="text-gradient">perfeito para você</span>
-            </h2>
-            <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-              Temos opções para todo nível de preparo. Escolha a que mais se adequa ao seu objetivo.
-            </p>
           </Section>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
