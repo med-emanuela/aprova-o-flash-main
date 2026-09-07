@@ -27,6 +27,7 @@ import flashcard2 from "@/assets/flashcard-2.png";
 import flashcard3 from "@/assets/flashcard-3.png";
 import whatsappProof from "@/assets/whatsapp-proof.png";
 import whatsappImageFinal from "@/assets/whatsapp-image-final.jpeg";
+import depoimento1234 from "@/assets/1234.jpg";
 import avaliacao1 from "@/assets/1.jpg";
 import avaliacao2 from "@/assets/2.jpg";
 import avaliacao5 from "@/assets/5.jpeg";
@@ -364,7 +365,7 @@ const Index = () => {
           {/* WhatsApp proof */}
           <Section>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto items-start">
-              {[whatsappImageFinal, whatsappProof, avaliacao1, avaliacao2, avaliacao5, avaliacao6].map((image, idx) => (
+              {[depoimento1234, whatsappImageFinal, whatsappProof, avaliacao1, avaliacao2, avaliacao5, avaliacao6].map((image, idx) => (
                 <div key={idx} className="rounded-2xl overflow-hidden border border-primary/20 self-start">
                   <img src={image} alt={`Depoimento ${idx + 1}`} className="w-full h-auto block" loading="lazy" />
                 </div>
