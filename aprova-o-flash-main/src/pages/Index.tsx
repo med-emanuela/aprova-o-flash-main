@@ -364,7 +364,7 @@ const Index = () => {
           {/* WhatsApp proof */}
           <Section>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto items-start">
-              {[whatsappProof, avaliacao1, avaliacao2, avaliacao5, avaliacao6].map((image, idx) => (
+              {[whatsappImageFinal, whatsappProof, avaliacao1, avaliacao2, avaliacao5, avaliacao6].map((image, idx) => (
                 <div key={idx} className="rounded-2xl overflow-hidden border border-primary/20 self-start">
                   <img src={image} alt={`Depoimento ${idx + 1}`} className="w-full h-auto block" loading="lazy" />
                 </div>
