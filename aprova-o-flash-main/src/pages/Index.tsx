@@ -439,33 +439,68 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ===== SEÇÃO FINAL ===== */}
-      <section className="py-12 sm:py-16 md:py-28 bg-card/50">
+      {/* ===== GARANTIA ===== */}
+      <section className="py-12 sm:py-16 md:py-20 border-y border-primary/10 bg-[#05151d]">
         <div className="container mx-auto px-4">
           <Section>
-            <div className="max-w-3xl mx-auto text-center">
-              <div className="w-24 sm:w-32 h-24 sm:h-32 rounded-full overflow-hidden border-4 border-primary/50 mx-auto mb-6 sm:mb-8 glow-green">
-                <img src={whatsappImageFinal} alt="Depoimento WhatsApp" className="w-full h-full object-cover" />
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border border-primary/40 bg-primary/10 mx-auto mb-6 sm:mb-8 flex items-center justify-center shadow-[0_0_35px_rgba(34,211,238,0.15)]">
+                <Shield className="w-12 h-12 sm:w-14 sm:h-14 text-primary" />
               </div>
 
-              <h2 className="font-display text-2xl sm:text-3xl md:text-5xl font-bold mb-6">
-                Se eu consegui <span className="text-gradient">5 aprovações em medicina</span>,
-                <br />você também pode
+              <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                Garantia Incondicional de 7 Dias
               </h2>
 
-              <p className="text-muted-foreground text-base sm:text-lg mb-8 sm:mb-10 max-w-xl mx-auto">
-                O mesmo material que fez a diferença na minha jornada está disponível para você agora.
-                Não deixe para depois o que pode mudar o seu futuro hoje.
-              </p>
-
-              <CTAButton text="QUERO COMEÇAR AGORA" />
-
-              <p className="text-xs sm:text-sm text-muted-foreground mt-6 flex items-center justify-center gap-2">
-                <Gift className="w-4 h-4 text-secondary" />
-                Vagas limitadas com esse preço especial
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+                Se por qualquer motivo você sentir que os flashcards não são para você,
+                basta enviar um e-mail em até 7 dias após a compra e devolvemos <strong className="text-foreground">100% do seu dinheiro</strong>.
+                Sem perguntas, sem burocracia. O risco é todo meu.
               </p>
             </div>
           </Section>
+        </div>
+      </section>
+
+      {/* ===== SEÇÃO FINAL ===== */}
+      <section className="py-16 sm:py-20 md:py-24 bg-[#020d18]">
+        <div className="container mx-auto px-4">
+          <Section>
+            <div className="max-w-[760px] mx-auto rounded-[28px] border border-primary/50 bg-[#020d18] shadow-[0_0_30px_rgba(45,212,191,0.18)] p-4 sm:p-6 md:p-8">
+              <div className="rounded-[20px] bg-gradient-to-r from-[#2bd4b6] via-[#2bc6a9] to-[#2bd4b6] px-4 sm:px-8 py-4 sm:py-5 shadow-[0_0_20px_rgba(45,212,191,0.35)]">
+                <a href={CTA_URL} target="_blank" rel="noopener noreferrer" className="block w-full">
+                  <Button
+                    size="lg"
+                    className="w-full bg-transparent hover:bg-transparent text-[#041b25] font-black text-lg sm:text-2xl md:text-[2rem] rounded-xl border-0 shadow-none inline-flex items-center justify-center gap-3 leading-none p-0"
+                  >
+                    <span className="text-center">QUERO MEUS FLASHCARDS</span>
+                    <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
+                  </Button>
+                </a>
+              </div>
+
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:gap-5 text-[0.88rem] sm:text-base text-foreground/90">
+                <div className="flex items-center gap-2">
+                  <CreditCard className="w-4 h-4 text-primary" />
+                  <span>Pix, cartão ou boleto</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Lock className="w-4 h-4 text-primary" />
+                  <span>Compra 100% segura</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Shield className="w-4 h-4 text-primary" />
+                  <span>Garantia de 7 dias</span>
+                </div>
+              </div>
+            </div>
+          </Section>
+
+          <div className="mt-16 flex justify-center">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-4 border-primary/50 shadow-[0_0_28px_rgba(45,212,191,0.35)] bg-primary/10">
+              <img src={whatsappImageFinal} alt="Depoimento WhatsApp" className="w-full h-full object-cover" />
+            </div>
+          </div>
         </div>
       </section>
 
