@@ -33,7 +33,7 @@ import avaliacao2 from "@/assets/2.jpg";
 import avaliacao5 from "@/assets/5.jpeg";
 import avaliacao6 from "@/assets/6.jpeg";
 
-const CTA_URL = "https://pay.kiwify.com.br/ehDsvac";
+const CTA_URL = "https://pay.kiwify.com.br/CaBSpYa";
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
@@ -413,11 +413,11 @@ const Index = () => {
                   <div className="mt-3 flex flex-col items-center gap-1">
                     <span className="text-muted-foreground text-base sm:text-xl">por apenas</span>
                     <div className="inline-flex items-end justify-center leading-none">
-                      <span className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-primary tracking-tight">R$ 37</span>
+                      <span className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-primary tracking-tight">R$ 67</span>
                       <span className="text-primary text-xl sm:text-2xl md:text-3xl font-semibold mb-1">,90</span>
                     </div>
                   </div>
-                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">ou 4x de R$ 10,22 sem juros</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mt-3">ou 3x de R$ 24,23 sem juros</p>
                 </div>
 
                 <CTAButton text="QUERO MEUS FLASHCARDS" className="w-full max-w-xl mx-auto justify-center" />
